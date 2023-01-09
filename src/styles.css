@@ -1,0 +1,149 @@
+/* You can add global styles to this file, and also import other style files
+
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap");
+:root {
+  --blue: #131661;
+  --grey: #ecebee;
+  --grey2: #bfbfbf;
+  --pink: #d50e38;
+}
+
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+ background-color:#ecebee !important;
+  overflow: hidden;
+}
+.stage{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+.stage_bg {
+    height: 75vh;
+    background: #131661;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .stage_inner {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    right: 0;
+    box-shadow: 0px 18px 43px -18px rgba(30, 31, 38, 0.2117647059);
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    background: #ecebee;
+    overflow: hidden;
+  }
+  .stage_inner__logo {
+    font-weight: 800;
+    pointer-events: none;
+    color: #d50e38;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    transition: all 0s 0.32s;
+    font-size: 30px;
+  }
+  .stage_inner__logo span {
+    position: Relative;
+    left: -4px;
+    color: #131661;
+  }
+  .stage_inner__menu {
+    position: relative;
+    z-index: 1;
+    padding: 30px 0 30px 0;
+  }
+  .stage_inner__menu .menu {
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+  }
+  .stage_inner__menu .menu_part {
+    width: 20px;
+    height: 2px;
+    transition: all 0s 0.32s;
+    margin-bottom: 2px;
+    position: relative;
+    background: #d50e38;
+  }
+  .stage_inner__menu .menu_part:nth-of-type(1) {
+    width: 14px;
+  }
+  .stage_inner__menu .menu_part:nth-of-type(3) {
+    width: 12px;
+    left: 12px;
+  }
+  .stage_inner__logo, .stage_inner__menu {
+    float: left;
+  }
+  .stage_inner h5 {
+    color: white;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    text-transform: uppercase;
+    z-index: 0;
+    font-size: 80px;
+    transform: translateY(calc(50% + 90px));
+    margin: 0;
+    transition: all 0.7s cubic-bezier(0.5, 0.005, 0.075, 0.985);
+    line-height: 0;
+  }
+  input[type=checkbox]:checked + div + div .stage_inner__footer {
+    bottom: -100px;
+  }
+  .stage_inner__footer {
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    transition: all 0.3s;
+  }
+  .stage_inner__footer .f {
+    float: right;
+    position: relative;
+    left: 40px;
+    top: -8px;
+  }
+  .stage_inner__footer .f:after {
+    content: "Ask";
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    position: absolute;
+    color: #131661;
+    font-size: 12px;
+    right: 9px;
+    top: 10px;
+  }
+  .stage_inner__footer .f:after:hover {
+    transform: scale(2);
+  }
+  .stage_inner__footer input {
+    padding: 8px;
+  }
+  .stage_inner__footer i {
+    cursor: pointer;
+    margin: 0 16px 0 0;
+    color: rgba(0, 0, 0, 0.75);
+    transition: all 0.3s;
+  }
+  .stage_inner__footer i:hover {
+    color: #d50e38;
+  }
+  
+  
+   */
