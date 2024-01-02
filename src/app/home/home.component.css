@@ -1,6 +1,9 @@
 
   /* card */
 
+a{
+  text-decoration: none;
+}
 
 .card{
     display: flex;
@@ -87,4 +90,16 @@ figure figcaption button {
   color: white;
   font-size: 14px;
   cursor: pointer;
+}
+
+.donate{
+  color: #ffffff;
+}
+
+.donateBtn:hover{
+  background-color: #ffffff;
+}
+.donate:hover {
+  background-color: #ffffff;
+  color: #1abc9c;
 }

@@ -94,7 +94,7 @@ input[type=checkbox]:checked + div + div h5 {
 }
 input[type=checkbox]:checked + div + div .stage_inner__right {
   width: 75%;
-  height: 75%;
+  height: 100%;
   transition: all 0.7s cubic-bezier(0.5, 0.005, 0.075, 0.985);
 }
 input[type=checkbox]:checked + div + div .stage_inner__right .fade:nth-of-type(1) {
@@ -468,9 +468,9 @@ input[type=checkbox]:checked + div + div .stage_inner__right .link {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     box-shadow: 0 0 20px 6px #090b6f85;
-    
+    height: 100%;
   }
   
   
@@ -628,3 +628,154 @@ input[type=checkbox]:checked + div + div .stage_inner__right .link {
 }
 
 /* SIGNI */
+
+
+input[type=checkbox] {
+  position: absolute;
+  z-index: 3;
+  display: none;
+}
+
+@media (max-width: 375px){
+  body {
+    overflow: auto;
+  }
+
+  .stage_inner__centerbox {
+    left: 0;
+    width: 100%;
+  }
+
+  .stage_inner__centerbox .text {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .stage_inner__footer {
+    padding: 10px;
+  }
+
+  .box-form {
+    flex-direction: column;
+  }
+
+  .box-form .right,
+  .box-form .left {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .box-form .right h6,
+  .box-form .left h6 {
+    font-size: 18px;
+  }
+
+  .box-form .right p,
+  .box-form .left p {
+    font-size: 14px;
+  }
+
+  .box-form .right input,
+  .box-form .left input {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .box-form .right button,
+  .box-form .left button {
+    margin-top: 15px;
+  }
+}
+
+/* Media query for small screens */
+@media (max-width: 576px) {
+  body {
+    overflow: auto;
+  }
+
+  .stage_inner__centerbox {
+    left: 0;
+    width: 100%;
+  }
+
+  .stage_inner__centerbox .text {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .stage_inner__footer {
+    padding: 10px;
+  }
+
+  .box-form {
+    flex-direction: column;
+  }
+
+  .box-form .right,
+  .box-form .left {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .box-form .right h6,
+  .box-form .left h6 {
+    font-size: 18px;
+  }
+
+  .box-form .right p,
+  .box-form .left p {
+    font-size: 14px;
+  }
+
+  .box-form .right input,
+  .box-form .left input {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .box-form .right button,
+  .box-form .left button {
+    margin-top: 15px;
+  }
+}
+
+/* Add media query for medium screens */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Adjust styles for medium screens if needed */
+}
+
+/* Add media query for large screens */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Adjust styles for large screens if needed */
+}
+
+/* Add media query for extra-large screens */
+@media (min-width: 993px) {
+  /* Adjust styles for extra-large screens if needed */
+}
+
+/* Rest of the existing styles */
+
+input[type=checkbox]:not(:checked) + div + div .illustration {
+  transform: scale(0);
+  -webkit-animation: braaaains 2s 1.2s steps(54, end) forwards;
+  animation: braaaains 2s 1.2s steps(54, end) forwards;
+}
+
+input[type=checkbox]:checked + div + div .stage_inner__logo {
+  color: white;
+}
+
+input[type=checkbox]:checked + div + div .menu_part {
+  background: white;
+}
+
+input[type=checkbox]:checked + div + div .stage_inner__article h2,
+input[type=checkbox]:checked + div + div .stage_inner__article h3,
+input[type=checkbox]:checked + div + div .stage_inner__article p {
+  opacity: 1;
+  left: 0px !important;
+  transition: all 0.7s 0.3s cubic-bezier(0.5, 0.005, 0.075, 0.985) !important;
+}
+
+/* Continue the existing styles... */
